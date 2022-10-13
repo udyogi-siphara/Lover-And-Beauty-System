@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="HomeContext" prefHeight="764.0" prefWidth="1392.0" style="-fx-background-color: f4f3f0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemFormController">
+   <children>
+      <AnchorPane layoutX="260.0" layoutY="-4.0" prefHeight="45.0" prefWidth="1138.0" style="-fx-background-color: #6F1E51;">
+         <children>
+            <Label layoutX="97.0" layoutY="14.0" text="Date - :" textFill="WHITE">
+               <font>
+                  <Font name="Aharoni Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="151.0" layoutY="14.0" text="12-03-2022" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="954.0" layoutY="14.0" text="Time - :" textFill="WHITE">
+               <font>
+                  <Font name="Aharoni Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="1008.0" layoutY="14.0" text="21:14:49" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="-5.0" prefHeight="101.0" prefWidth="260.0" style="-fx-background-color: #833471;">
+         <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="16.0" layoutY="30.0" size="24" />
+            <Text fill="WHITE" layoutX="48.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OWNER">
+               <font>
+                  <Font name="Aharoni Bold" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="40.0" prefHeight="724.0" prefWidth="260.0" style="-fx-background-color: #6F1E51;">
+         <children>
+            <JFXButton layoutX="3.0" layoutY="77.0" onAction="#btnHomeOnAction" prefHeight="61.0" prefWidth="257.0" style="-fx-background-color: #6F1E51;" text="HOME" textFill="WHITE">
+               <font>
+                  <Font name="Aharoni Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="3.0" layoutY="138.0" onAction="#btnOrderOnAction" prefHeight="61.0" prefWidth="257.0" style="-fx-background-color: #6F1E51;" text="ORDER" textFill="WHITE">
+               <font>
+                  <Font name="Aharoni Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="3.0" layoutY="260.0" onAction="#btnDelievryOnAction" prefHeight="61.0" prefWidth="257.0" style="-fx-background-color: #6F1E51;" text="DELIVERY" textFill="WHITE">
+               <font>
+                  <Font name="Aharoni Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="3.0" layoutY="321.0" onAction="#btnSupplierOnAction" prefHeight="61.0" prefWidth="257.0" style="-fx-background-color: #6F1E51;" text="SUPPLIER" textFill="WHITE">
+               <font>
+                  <Font name="Aharoni Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="3.0" layoutY="382.0" onAction="#btnItemOnAction" prefHeight="61.0" prefWidth="257.0" style="-fx-background-color: #6F1E51;" text="ITEM" textFill="WHITE">
+               <font>
+                  <Font name="Aharoni Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="3.0" layoutY="443.0" onAction="#btnEmployeeOnAction" prefHeight="61.0" prefWidth="257.0" style="-fx-background-color: #6F1E51;" text="EMPLOYEE" textFill="WHITE">
+               <font>
+                  <Font name="Aharoni Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="3.0" layoutY="504.0" onAction="#btnSettingsOnAction" prefHeight="61.0" prefWidth="257.0" style="-fx-background-color: #6F1E51;" text="SETTINGS" textFill="WHITE">
+               <font>
+                  <Font name="Aharoni Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="3.0" layoutY="565.0" onAction="#btnLogoutOnAction" prefHeight="61.0" prefWidth="257.0" style="-fx-background-color: #6F1E51;" text="LOG OUT" textFill="WHITE">
+               <font>
+                  <Font name="Aharoni Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIconView fill="WHITE" glyphName="HOME" layoutX="21.0" layoutY="114.0" size="24" />
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="22.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/assests/cart.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="22.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/assests/deliver.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="22.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/assests/USERS.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="23.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/assests/ingredients.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="23.0" layoutY="460.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/assests/employee.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="23.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/assests/settings.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="23.0" layoutY="586.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/assests/logout.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="2.0" layoutY="199.0" onAction="#btnCustomerOnAction" prefHeight="61.0" prefWidth="257.0" style="-fx-background-color: #6F1E51;" text="CUSTOMER" textFill="WHITE">
+               <font>
+                  <Font name="Aharoni Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="22.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/assests/customer.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="260.0" layoutY="41.0" prefHeight="75.0" prefWidth="1138.0" style="-fx-background-color: #e0adc6;">
+         <children>
+            <Text fill="WHITE" layoutX="29.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ITEM">
+               <font>
+                  <Font name="Aharoni Bold" size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="274.0" layoutY="132.0" prefHeight="570.0" prefWidth="810.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <TableView fx:id="tblItems" layoutX="10.0" layoutY="167.0" prefHeight="380.0" prefWidth="788.0">
+               <columns>
+                  <TableColumn fx:id="colItemCode" prefWidth="111.00003051757812" text="Code" />
+                  <TableColumn fx:id="colItemSupplierId" prefWidth="129.0" text="Supplier Id" />
+                  <TableColumn fx:id="colItemName" prefWidth="141.0" text="Item Name" />
+                  <TableColumn fx:id="colItemPrice" prefWidth="158.0" text="Unit Price" />
+                  <TableColumn fx:id="colItemQty" prefWidth="126.0" text="Qty" />
+                  <TableColumn fx:id="colButton" prefWidth="120.0" text="Operate" />
+               </columns>
+            </TableView>
+            <JFXTextField fx:id="txtItemCode" layoutX="92.0" layoutY="16.0" onKeyReleased="#textFiledOnAction" prefHeight="25.0" prefWidth="98.0" />
+            <Text layoutX="40.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Code">
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="txtItemName" layoutX="549.0" layoutY="16.0" onKeyReleased="#textFiledOnAction" prefHeight="25.0" prefWidth="200.0" />
+            <Text layoutX="460.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name">
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btnAddItem" layoutX="490.0" layoutY="100.0" onAction="#btnAddItemOnAction" prefHeight="36.0" prefWidth="172.0" style="-fx-background-color: #1dd1a1;" text="+ Add  Item" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXComboBox fx:id="cmbItemSupplierId" layoutX="245.0" layoutY="17.0" prefHeight="25.0" prefWidth="165.0" promptText="Supplier Id" />
+            <Text layoutX="40.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unit Price">
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtItemPrice" layoutX="117.0" layoutY="87.0" onKeyReleased="#textNormalOnAction" prefHeight="25.0" prefWidth="118.0" promptText="            Price" />
+            <Text layoutX="267.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty">
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtItemQty" layoutX="312.0" layoutY="87.0" onKeyReleased="#textNormalOnAction" prefHeight="25.0" prefWidth="118.0" promptText="            Qty" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1093.0" layoutY="132.0" prefHeight="570.0" prefWidth="260.0" style="-fx-background-color: white;">
+         <children>
+            <Text layoutX="56.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Item">
+               <font>
+                  <Font name="Cambria" size="20.0" />
+               </font>
+            </Text>
+            <Separator layoutX="20.0" layoutY="47.0" prefHeight="10.0" prefWidth="218.0" />
+            <JFXTextField fx:id="txtItmCode" labelFloat="true" layoutX="35.0" layoutY="76.0" onAction="#txtSearchOnAction" onKeyReleased="#textFieldsOnAction" prefHeight="25.0" prefWidth="200.0" promptText="Code" />
+            <JFXTextField fx:id="txtItmName" labelFloat="true" layoutX="35.0" layoutY="220.0" onKeyReleased="#textFieldsOnAction" prefHeight="25.0" prefWidth="200.0" promptText="Item Name" />
+            <JFXTextField fx:id="txtItmPrice" labelFloat="true" layoutX="35.0" layoutY="299.0" onKeyReleased="#textFieldsOnAction" prefHeight="25.0" prefWidth="200.0" promptText="Unite Price" />
+            <JFXTextField fx:id="txtItmQty" labelFloat="true" layoutX="35.0" layoutY="377.0" onKeyReleased="#textFieldsOnAction" prefHeight="25.0" prefWidth="200.0" promptText="Qty" />
+            <JFXButton fx:id="btnUpdateItem" layoutX="50.0" layoutY="453.0" onAction="#btnUpdateItemOnAction" prefHeight="36.0" prefWidth="172.0" style="-fx-background-color: #cf6a87;" text="Update " textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXComboBox fx:id="cmbItmSupplierId" layoutX="35.0" layoutY="150.0" prefHeight="25.0" prefWidth="200.0" promptText="Supplier Id" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="40.0" prefHeight="77.0" prefWidth="260.0" style="-fx-background-color: #bb689d;" />
+      <Text fill="WHITE" layoutX="36.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ayur Ceylon">
+         <font>
+            <Font name="Blazed" size="22.0" />
+         </font>
+      </Text>
+      <Separator layoutX="40.0" layoutY="87.0" prefHeight="10.0" prefWidth="186.0" />
+   </children>
+</AnchorPane>

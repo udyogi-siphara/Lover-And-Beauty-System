@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="LoginContext" prefHeight="461.0" prefWidth="567.0" style="-fx-background-color: #6F1E51;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <Text fill="#ede6ec" layoutX="307.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+         <font>
+            <Font name="Corbel Bold" size="32.0" />
+         </font>
+      </Text>
+      <Separator layoutX="307.0" layoutY="73.0" prefHeight="10.0" prefWidth="226.0" />
+      <JFXTextField fx:id="txtUserName" focusColor="WHITE" labelFloat="true" layoutX="308.0" layoutY="125.0" onKeyReleased="#textFieldValidationOnAction" prefHeight="25.0" prefWidth="198.0" promptText="user name" style="-fx-prompt-text-fill: #FFFFFF; -fx-text-fill: #ffffff;" unFocusColor="WHITE" />
+      <JFXPasswordField fx:id="pwdPassword" focusColor="WHITE" labelFloat="true" layoutX="308.0" layoutY="190.0" onKeyReleased="#passwordFieldValidationOnAction" prefHeight="25.0" prefWidth="198.0" promptText="password" style="-fx-prompt-text-fill: #ffffff; -fx-text-fill: #ffffff;" unFocusColor="WHITE" />
+      <JFXButton fx:id="btnLogin" layoutX="336.0" layoutY="327.0" onAction="#btnLoginOnAction" prefHeight="34.0" prefWidth="143.0" style="-fx-background-color: #6F1E51; -fx-border-color: #ffffff; -fx-border-radius: 15px;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Corbel Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text fill="WHITE" layoutX="324.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account? " wrappingWidth="130.99999900907278" />
+      <Label fx:id="lblSignup" layoutX="454.0" layoutY="401.0" onMouseClicked="#lblSignup" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <JFXComboBox fx:id="cmbSelectType" focusColor="WHITE" labelFloat="true" layoutX="308.0" layoutY="256.0" prefHeight="25.0" prefWidth="198.0" promptText="Select Type" style="-fx-prompt-text-fill: #ffffff;" stylesheets="@../assets/style.css" unFocusColor="WHITE" />
+      <AnchorPane prefHeight="461.0" prefWidth="273.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fitHeight="180.0" fitWidth="226.0" layoutX="22.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <FontAwesomeIconView fx:id="icnEye" fill="WHITE" glyphName="EYE_SLASH" layoutX="512.0" layoutY="209.0" onMouseClicked="#eyeClickOnAction" size="20" wrappingWidth="20.0" />
+      <JFXTextField fx:id="txtPassword" focusColor="WHITE" layoutX="308.0" layoutY="189.0" prefHeight="25.0" prefWidth="198.0" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="WHITE" />
+   </children>
+</AnchorPane>

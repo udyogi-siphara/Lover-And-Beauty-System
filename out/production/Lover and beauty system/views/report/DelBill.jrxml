@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.0.final using JasperReports Library version 6.19.0-646c68931cebf1a58bc65c4359d1f0ca223c5e94  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DelBill" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fbec091d-bcee-476a-bb0c-364c47f4d25b">
+	<parameter name="deliveryId" class="java.lang.String"/>
+	<parameter name="driverId" class="java.lang.String"/>
+	<parameter name="orderId" class="java.lang.String"/>
+	<parameter name="deliveryPrice" class="java.lang.Double"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="86" splitType="Stretch">
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="53" y="57" width="110" height="21" uuid="415fde99-04e6-4a7a-b7df-1f84dc9761b9"/>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="2" y="80" width="550" height="1" uuid="6b97c59c-ec2a-4246-b07f-4cdf1e860cb4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="14" y="58" width="36" height="20" uuid="0c3262e4-a831-4fa6-9ec1-bef7b8a786ae">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="35" width="114" height="20" uuid="4d98f5bc-1566-481e-8981-af0d2aadd115"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOUCH BEAUTY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="437" y="58" width="40" height="20" uuid="a1fad39d-333a-4849-bb5a-dc30c4515a32"/>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Time :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="213" y="0" width="147" height="40" uuid="da37a2e5-a5fd-496c-b56a-e7dd3a4bc2a3"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ayur Ceylon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="55" width="94" height="25" uuid="39725f76-e04f-4283-8f6b-ece21eb3457f"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Delivery Service]]></text>
+			</staticText>
+			<textField pattern="HH:mm">
+				<reportElement x="482" y="58" width="58" height="20" uuid="b97026fe-02a8-4596-9372-2d318c7b325e"/>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="33" y="50" width="100" height="30" uuid="def3afd0-438b-4590-9587-70206f755aa2"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deliveryId}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="154" y="19" width="70" height="20" uuid="dfd70387-1cce-4dd8-97eb-5218d0a3f7a3">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[driverId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="19" width="70" height="20" uuid="d8d09063-2fc9-4e7c-a9c8-a029801f1474">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[orderId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="406" y="19" width="114" height="20" uuid="4cc1b90d-ad07-44bd-a610-d37d95259f72">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[deliveryPrice]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="18" width="70" height="20" uuid="e7f23669-dda3-4289-9ade-857895172e81">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[deliveryId]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="154" y="50" width="100" height="30" uuid="11191791-4bef-4368-93c8-0a2ff44c2c7b"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{driverId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="50" width="100" height="30" uuid="1770d9f2-2fbf-4c3d-9ef7-a79c609bfde1"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{orderId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="406" y="50" width="100" height="30" uuid="02500a4c-ae74-480d-b63e-2b7dfd73c818"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deliveryPrice}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="47" splitType="Stretch">
+			<line>
+				<reportElement x="147" y="27" width="100" height="1" uuid="638c377b-a962-4cfb-a798-954a92a73f13">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="5" y="7" width="142" height="30" uuid="a4d1c1cf-4955-425c-909a-48a758710f79"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Customers' Signature :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="315" y="7" width="127" height="30" uuid="ec7da119-c3de-42fc-8816-498fc1c3444a"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Delivers' Signature : ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="443" y="26" width="100" height="1" uuid="0a2145e7-4d69-4f3b-9227-bfc3e67f1078">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement x="181" y="40" width="203" height="19" uuid="9630d3a5-664a-47e1-a0f5-37816b2ced25"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Tel no : 071-2512120 / 055-6501021]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="25" width="170" height="30" uuid="4bf029fc-d062-4da2-80b0-afd38a114133"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No/320 , Badulla Road, Bible.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="89" width="554" height="1" uuid="0206bf85-5843-45c2-88a0-2fbefb00db01">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="2" y="11" width="554" height="1" uuid="0b4dee9a-2b58-418f-aa59-cda7f0d7cf18">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="221" y="59" width="129" height="20" uuid="5ea25cfb-e52e-4c78-b13a-5ccfc106d544"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[ayurceylon@gmail.com]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>
